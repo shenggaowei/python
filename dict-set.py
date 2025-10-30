@@ -9,3 +9,6 @@ print(d.get('Bob'))
 print('Michael' in d)
 
 print(d.pop('Tracy'))
+
+a = set((1, [2, 3]))
+print(a)
