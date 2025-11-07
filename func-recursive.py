@@ -12,3 +12,10 @@ def fact2(n, sum = 1):
         return sum 
     return fact2(n-1, sum * n);
 print(fact2(100))
+
+L = [];
+n = 1;
+while n <= 99:
+    L.append(n)
+    n = n + 2;
+print(L)
