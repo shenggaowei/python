@@ -1,11 +1,54 @@
 #! /usr/bin/env python3
+import os
 
-print(list(range(1,11)))
+print(list(range(1,11)));
 
-L = []
+L = [];
 for x in range(1,11):
     L.append(x * x)
 print(L)
 
-L1 = [x * x for x in range(1,11)]
-print(L1)
+print([x * x for x in range(1,11)])
+[x * x for x in range(1,11)]
+[x * x for x in range(1,11)]
+[x * x for x in range(1,11)]
+[x * x for x in range(1,11)]
+[x * x for x in range(1,11)]
+[x * x for x in range(1,11)]
+[x * x for x in range(1,11)]
+[x * x for x in range(1,11)]
+[x * x for x in range(1,11)]
+[x * x for x in range(1,11)]
+[x * x for x in range(1,11)]
+
+[x * x for x in range(1,11) if x % 2 == 0]
+[m + n for m in 'ABC' for n in 'XYZ']
+[m + n for m in 'ABC' for n in 'XYZ']
+
+print([d for d in os.listdir('.')])
+
+d = { 'x': 'A', 'y': 'B', 'z': 'C' }
+for k,v in d.items():
+    print(k, '=', v)
+
+print([k + '=' + v for k,v in d.items()])
+
+L = ['Hello', 'World', 'IBM', 'Apple']
+print([s.lower() for s in L])
+
+print([x for x in range(1,11) if x % 2 == 0])
+
+# 不能在最后的 if 后加上 else，因为跟在 for 后面的 if 是一个筛选条件 ，不能带 lse
+# print([x for x in range(1,11) if x % 2 == 0 else 0])
+
+print([x if x % 2 == 0 else -x for x in range(1,11)])
+
+L1 = ['Hello', 'World', 18, 'Apple', None]
+L2 = [x.lower() for x in L1 if isinstance(x , str) == True]
+
+# 测试:
+print(L2)
+if L2 == ['hello', 'world', 'apple']:
+    print('测试通过!')
+else:
+    print('测试失败!')
