@@ -21,3 +21,5 @@ def triangles():
         print('\n')
 
 triangles()
+
+# TODO: generator 的写法
