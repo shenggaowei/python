@@ -22,8 +22,10 @@ print(classMateTuple);
 t = ();
 print('t', t)
 
+# python 认为是数字1
 t = (1);
 print('t', t)
 
+# 有个逗号, python 认为是个 tuple
 t = (1,);
 print('t', t)

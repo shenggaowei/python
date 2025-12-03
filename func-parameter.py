@@ -47,6 +47,7 @@ def calc2(*numbers):
         sum = sum + n * n
     return sum;
 print('calc2', calc2(1,2,3))
+# *nums表示把nums这个list的所有元素作为可变参数传进去。这种写法相当有用，而且很常见。
 print('calc2', calc2(*[1,2,3]))
 
 #"关键字参数"
