@@ -70,12 +70,11 @@ def str2float(s):
     def str2Int(x, y):
         return x * 10 + y;
 
-    def str2Digital(x):
-        length = len(str(x))
+    def str2Digital(x, length):
         return x / (10 ** length) 
 
     [num1, num2] = s.split('.') 
-    return reduce(str2Int, map(char2num, num1)) + str2Digital(reduce(str2Int,map(char2num, num2)))
+    return reduce(str2Int, map(char2num, num1)) + str2Digital(reduce(str2Int,map(char2num, num2)), len(num2))
 
 # 456
 print('str2float(\'123.456\') =', str2float('123.456'))
