@@ -72,7 +72,7 @@ person2('Jack', 24, city='Beijing', addr='Chaoyang', zipcode=123456)
 def person3(name, age, *, city, job):
     print(name, age, city, job)
 person3('Jack', 24, city='Beijing', job='Engineer')
-person3('Jack', 24, city='Beijing', job='Engineer' ) 
+person3('Jack', 24, city='Beijing', job2='Engineer' ) 
 #"TypeError: person3() got an unexpected keyword argument job2. Did you mean job"
 
 def person4(name, age, *args, city, job):
